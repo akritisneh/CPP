@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+class box{
+    public:
+    int length;
+    int breadth;
+    box(int l,int b){
+        this->length=l;
+        this->breadth=b;
+    }
+    void operator+(){
+        length++;
+        breadth++;
+        cout<<"new dimensions are:"<<length<<"and"<<breadth;
+    }
+};
+int main()
+{
+   box obj(3,4);
+   +obj;
+   return 0;
+}
