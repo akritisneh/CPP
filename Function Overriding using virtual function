@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class employee{
+    public:
+    virtual void print(){
+        cout<<"Height"<<endl;
+        cout<<"Weight"<<endl;
+    }
+};
+class New : public employee{
+    string name;
+    string prof;
+    string salary;
+    public:
+    New(string name, string p,string salary){
+        this->name = name;
+        this->prof = p;
+        this->salary=salary;
+    }
+    void print(){
+        cout<<"Employee details:"<<endl;
+        cout<<"Name: "<<name<<endl;
+        cout<<"Profession: "<<prof<<endl;
+        cout<<"Salary: "<<salary<<endl;
+    }
+};
+int main()
+{
+    New obj("Akriti","SDE","100K");
+    employee b1;
+    obj.print();                                     
+    return 0;
+}
