@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+class operation{
+    int a,b,s;
+    public:
+    int sum(int a,int b){
+        s=a+b;
+        return s;
+    }
+    double sum(double a,double b){
+        s=a+b;
+        return s;
+    }
+};
+int main()
+{
+    operation o;
+    int x=o.sum(10,7);
+    cout<<"Sum of first first function is:"<<x<<endl;
+    int y=o.sum(225.77,336.5);
+    cout<<"Sum of second fumction is:"<<y<<endl;
+    return 0;
+}
